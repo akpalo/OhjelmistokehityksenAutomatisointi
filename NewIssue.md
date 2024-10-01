@@ -1,3 +1,3 @@
 Create unit tests for home component
 
-Assignees: 
+Assignees: @liisauosukainen
