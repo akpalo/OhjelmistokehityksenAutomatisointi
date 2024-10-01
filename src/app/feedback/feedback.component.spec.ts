@@ -20,7 +20,7 @@ describe('FeedbackComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
+  // Valmis testi
   it('should create', () => {
     expect(component).toBeTruthy();
   });
