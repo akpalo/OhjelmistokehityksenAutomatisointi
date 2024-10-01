@@ -21,7 +21,7 @@ export class FeedbackComponent implements OnInit {
   });
 
   constructor(public router: Router) { }
-
+// muutos
   ngOnInit(): void {
   }
 
