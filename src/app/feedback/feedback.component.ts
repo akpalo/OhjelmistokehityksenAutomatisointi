@@ -25,7 +25,8 @@ export class FeedbackComponent implements OnInit {
   // TODO #9
 
   ngOnInit(): void {
-    //jotain koodia
+    // jotain koodia
+    // lisää koodia
   }
 
   cancel() {
