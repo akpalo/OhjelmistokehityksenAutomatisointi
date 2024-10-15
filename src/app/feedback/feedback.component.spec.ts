@@ -8,13 +8,9 @@ describe('FeedbackComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FeedbackComponent ],
-      schemas: [
-        CUSTOM_ELEMENTS_SCHEMA,
-        NO_ERRORS_SCHEMA
-      ]
-    })
-    .compileComponents();
+      declarations: [FeedbackComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(FeedbackComponent);
     component = fixture.componentInstance;

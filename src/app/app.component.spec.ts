@@ -6,15 +6,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-      schemas: [
-        CUSTOM_ELEMENTS_SCHEMA
-      ]
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   });
   // Valmis testi
@@ -34,6 +28,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.toolbar span')?.textContent).toContain('Dev-ops-kurssin harjoitusprojekti');
+    expect(compiled.querySelector('.toolbar span')?.textContent).toContain(
+      'Dev-ops-kurssin harjoitusprojekti'
+    );
   });
 });
