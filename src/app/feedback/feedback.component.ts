@@ -30,9 +30,14 @@ export class FeedbackComponent implements OnInit {
     termsAndConditions: new FormControl(''),
   });
 
-  constructor(public router: Router) {}
-  // muutos
-  ngOnInit(): void {}
+  constructor(public router: Router) { }
+
+  // TODO #9
+
+  ngOnInit(): void {
+    // jotain koodia
+    // lisää koodia
+  }
 
   cancel() {
     this.router.navigate(['home']);
