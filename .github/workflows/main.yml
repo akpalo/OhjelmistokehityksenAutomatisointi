@@ -7,7 +7,7 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-name: Build and deploy a container to an Azure Web App
+name: Build, test, and deploy a container to an Azure Web App
 
 env:
   AZURE_WEBAPP_NAME: minunapp   # set this to your application's name
@@ -27,10 +27,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: npm install and build webpack
-        run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        run: npm install
+      - name: Run unit tests
+        run: npm test
+      - name: Build the application
+        run: npm run build
       - uses: actions/upload-artifact@master
         with:
           name: webpack artifacts
