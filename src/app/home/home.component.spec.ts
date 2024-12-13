@@ -42,8 +42,14 @@ describe('HomeComponent', () => {
     const links = fixture.nativeElement.querySelectorAll('a');
     expect(links.length).toBe(3); // Tarkistaa, että linkkejä on kolme
 
-  expect(links[0].getAttribute('href')).toBe('https://angular.io/guide/testing-components-scenarios');
-  expect(links[1].getAttribute('href')).toBe('https://testing-angular.com/introduction/#introduction');
-  expect(links[2].getAttribute('href')).toBe('https://simpleweblearning.com/form-testing-in-angular/');
+    expect(links[0].getAttribute('href')).toBe(
+      'https://angular.io/guide/testing-components-scenarios'
+    );
+    expect(links[1].getAttribute('href')).toBe(
+      'https://testing-angular.com/introduction/#introduction'
+    );
+    expect(links[2].getAttribute('href')).toBe(
+      'https://simpleweblearning.com/form-testing-in-angular/'
+    );
   });
 });

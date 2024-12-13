@@ -30,7 +30,7 @@ export class FeedbackComponent implements OnInit {
     termsAndConditions: new FormControl(''),
   });
 
-  constructor(public router: Router) { }
+  constructor(public router: Router) {}
 
   // TODO #9
 

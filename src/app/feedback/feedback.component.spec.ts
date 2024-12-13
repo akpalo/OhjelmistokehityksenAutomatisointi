@@ -28,13 +28,13 @@ describe('FeedbackComponent', () => {
     expect(component.fbForm.controls['name'].invalid).toBeTruthy();
     // Muoto, jos halutaan tarkastaa kaikki:
     // expect(component.fbForm.invalid).toBeTruthy();
-  })
+  });
 
   // 2.Testi - sähköpostin muotoilun tarkistus
   it('Should show email error when email format is incorrect', () => {
     component.fbForm.controls['email'].setValue('invalid-email');
     expect(component.fbForm.controls['email'].hasError('email')).toBeTruthy();
-  })
+  });
 
   // 3.Testi - Lomakkeen alustamisen tarkistus
   it('should create the form with 6 controls', () => {
